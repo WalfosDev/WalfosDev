@@ -7,27 +7,31 @@ ENG (fluent) · FR (fluent) · 日本語 (beginner)
 ---
 ### 🔭 My Projects
 #### 1) **Haichi (配置) : Browser-based distributed display controller** `active`
-Managing content across multiple displays is painful; proprietary software, manual sync, fiddly OS utilities. Haichi (Japanese for *arrangement*) solves this with a zero-install web app, it allows the user to controll the content on the other displays: sign in, drag, done. I'm building the app to learn more about web products, user interfaces, and state management.
-
-It's built as a **React (Typescript)** SPA (single-page application) talking to a **Django REST** backend. State is managed client-side; django relays requests and manages authorisation, metadata lives in **PostgreSQL**, and **media** is offloaded to object storage (**S3 / MinIO** locally) to keep the database lean. Containerized with **Docker** for local development.
+  - Managing content across multiple displays is painful; proprietary software, manual sync, fiddly OS utilities.
+  - Haichi (Japanese for *arrangement*) solves this with a zero-install web app, it allows the user to controll the content on the other displays: sign in, drag, done.
+  - It's built as a **React (Typescript)** SPA (single-page application) talking to a **Django REST** backend. State is managed client-side; django relays requests and manages authorisation, metadata lives in **PostgreSQL**, and **media** is offloaded to object storage (**S3 / MinIO** locally) to keep the database lean.
+  - Containerized with **Docker** for local development.
 <br>
 
 #### 2) **Robowars : IEEE Concordia 2026 Competition** `active`
-The format: 20cm × 20cm robots fight to push each other off a circular platform with white edges. Rounds typically last under 10 seconds, which makes real-time
-performance the central engineering challenge. For example; sensor reads cannot block motor control, state resolution must be near-instant, and power delivery must survive the back-EMF spikes from aggressive torque demands.
-
-Designed in **KiCad**. The robot runs on an **ESP32-S3** using **ESP-IDF** directly (**no Arduino** abstraction) with task scheduling handled by **FreeRTOS** for strict timing guarantees. Opponets are detected using an IR array driven by a 2-to-4 multiplexed GPIO controller, sampled at fixed intervals via the **GPTimer** peripheral with an ISR updating shared state. The GPIO reads use bit-masking for efficiency. Edge detection is handled by a dedicated line-following sensor. Motor output uses the **MCPWM** peripheral driving the motor controllers directly.
+  - A competition where 20cm × 20cm robots fight to push each other off a circular platform with white edges.
+  - Rounds typically last under 10 seconds, which makes real-time performance the central engineering challenge. For example; sensor reads cannot block motor control, state resolution must be near-instant, and power delivery must survive the back-EMF spikes from aggressive torque demands.
+  - Designed in **KiCad**. The robot runs on an **ESP32-S3** using **ESP-IDF** directly (**no Arduino** abstraction) with task scheduling handled by **FreeRTOS** for strict timing guarantees.
+  - Opponets are detected using an IR array driven by a 2-to-4 multiplexed GPIO controller, sampled at fixed intervals via the **GPTimer** peripheral with an ISR updating shared state. The GPIO reads use bit-masking for efficiency.
+  - Edge detection is handled by a dedicated line-following sensor. Motor output uses the **MCPWM** peripheral driving the motor controllers directly.
 <br>
 
 #### 3) **ChessRobot : ROS2 Motion Controller** `active`
-Building the middleware layer between a chess-playing ML model and physical hardware for an autonomous chess robot. The system uses `ROS2` with `URDF`, `RViz`, and
-`Gazebo` for simulation of a `LeRobot` arm, with `MoveIt` handling motion planning. Current focus is configuring the hardware controller for physical arm deployment.
+  - Building the middleware layer between a chess-playing ML model and physical hardware for an autonomous chess robot.
+  - The system uses `ROS2` with `URDF`, `RViz`, and `Gazebo` for simulation of a `LeRobot` arm, with `MoveIt` handling motion planning.
+  - Current focus is configuring the hardware controller for physical arm deployment.
 <br>
 
 #### 4) **Nauti Metrics : QGIS Bathymetric Data Pipeline** `2025`
-Built a geospatial data pipeline for Nauti Metrics, a marine survey startup. Raw NMEA sonar logs from an EdgeTech EU D052 echosounder are parsed and cleaned
-in Python. Outliers are removed via Z-score filtering and KMeans clustering then exported to CSV and visualized as bathymetric maps in QGIS using spatial
-interpolation techniques. A front-end to visualize the processs was built using React. Libraries used: `Pandas`, `Numpy`, `Scikit-Learn`, `Jupyter-Notebooks`.
+  - Built a geospatial data pipeline for Nauti Metrics, a marine survey startup. Raw NMEA sonar logs from an EdgeTech EU D052 echosounder are parsed and cleaned
+in Python.
+  - Outliers are removed via  filtering and clustering then exported to CSV and visualized as bathymetric maps in QGIS using spatial interpolation techniques.
+  - Libraries used: `Pandas`, `Numpy`, `Scikit-Learn`, `Jupyter-Notebooks`.
 
 ---
 ### 🏅 Awards
