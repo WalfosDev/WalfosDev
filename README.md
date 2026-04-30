@@ -4,29 +4,29 @@ I love competitions, check out my [LinkedIn](mailto:merrick.marshall.innovates@g
 
 ENG (fluent) · FR (fluent) · 日本語 (beginner)
 ---
-###🔭 My Projects
-**Haichi (配置) : Browser-based distributed display controller** `active`
+### 🔭 My Projects
+#### **Haichi (配置) : Browser-based distributed display controller** `active`
 Managing content across multiple displays is painful; proprietary software, manual sync, fiddly OS utilities. Haichi (Japanese for *arrangement*) solves this with a zero-install web app, it allows the user to controll the content on the other displays: sign in, drag, done. I'm building the app to learn more about web products, user interfaces, and state management.
 
 It's built as a **React (Typescript)** SPA (single-page application) talking to a **Django REST** backend. State is managed client-side; django relays requests and manages authorisation, metadata lives in **PostgreSQL**, and **media** is offloaded to object storage (**S3 / MinIO** locally) to keep the database lean. Containerized with **Docker** for local development.
-
-**Robowars : IEEE Concordia 2026 Competition** `active`
+<br>
+#### **Robowars : IEEE Concordia 2026 Competition** `active`
 The format: 20cm × 20cm robots fight to push each other off a circular platform with white edges. Rounds typically last under 10 seconds, which makes real-time
 performance the central engineering challenge. For example; sensor reads cannot block motor control, state resolution must be near-instant, and power delivery must survive the back-EMF spikes from aggressive torque demands.
 
 Designed in **KiCad**. The robot runs on an **ESP32-S3** using **ESP-IDF** directly (**no Arduino** abstraction) with task scheduling handled by **FreeRTOS** for strict timing guarantees. Opponets are detected using an IR array driven by a 2-to-4 multiplexed GPIO controller, sampled at fixed intervals via the **GPTimer** peripheral with an ISR updating shared state. The GPIO reads use bit-masking for efficiency. Edge detection is handled by a dedicated line-following sensor. Motor output uses the **MCPWM** peripheral driving the motor controllers directly.
-
-**ChessRobot : ROS2 Motion Controller** `active`
+<br>
+#### **ChessRobot : ROS2 Motion Controller** `active`
 Building the middleware layer between a chess-playing ML model and physical hardware for an autonomous chess robot. The system uses `ROS2` with `URDF`, `RViz`, and
 `Gazebo` for simulation of a `LeRobot` arm, with `MoveIt` handling motion planning. Current focus is configuring the hardware controller for physical arm deployment.
-
-**Nauti Metrics : QGIS Bathymetric Data Pipeline** `2025`
+<br>
+#### **Nauti Metrics : QGIS Bathymetric Data Pipeline** `2025`
 Built a geospatial data pipeline for Nauti Metrics, a marine survey startup. Raw NMEA sonar logs from an EdgeTech EU D052 echosounder are parsed and cleaned
 in Python. Outliers are removed via Z-score filtering and KMeans clustering then exported to CSV and visualized as bathymetric maps in QGIS using spatial
 interpolation techniques. A front-end to visualize the processs was built using React. Libraries used: `Pandas`, `Numpy`, `Scikit-Learn`, `Jupyter-Notebooks`.
 
 ---
-###🏅 Awards
+### 🏅 Awards
 Competitions
 - **AquaAction Great Lakes Challenge — 3rd Place** · Traverse City, MI · May 2024
 - **Best Technical Innovation** — Shrekathon Hackathon · Concordia University · Mar 2026
@@ -35,13 +35,14 @@ Competitions
 - **3rd Place** — CSME Robotics Competition · Feb 2026
 - **IEEE's Choice Award** — Formula WIEEE RC Robot Car Competition · IEEE Concordia · Nov 2025
 - **3rd Place** — Concordia Englympics Consulting Case Competition · Oct 2025
-
+<br>
 Academic & Leadership
 - **Cardinal Roy Trophy** — Academic excellence and leadership · Cégep Champlain St. Lawrence · Jun 2025
 - **Lieutenant Governor's Medal** (Youth/Bronze Category) · Province of Québec · Jan 2025 
 
 --- 
-###📫 How to reach me
+### 📫 How to reach me
+
 [![LinkedIn](https://img.shields.io/badge/🔗%20LinkedIn-Merrick%20Marshall-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/merrick-marshall-innovates/)
 <br>
 [![Email](https://img.shields.io/badge/📧%20merrick.marshall.innovates@gmail.com-FF4C4C?style=for-the-badge)](mailto:merrick.marshall.innovates@gmail.com)
