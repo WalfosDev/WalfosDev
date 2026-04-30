@@ -40,8 +40,6 @@ Competitions
 - **3rd Place** — CSME Robotics Competition · Feb 2026
 - **IEEE's Choice Award** — Formula WIEEE RC Robot Car Competition · IEEE Concordia · Nov 2025
 - **3rd Place** — Concordia Englympics Consulting Case Competition · Oct 2025
-<br>
-Academic & Leadership
 - **Cardinal Roy Trophy** — Academic excellence and leadership · Cégep Champlain St. Lawrence · Jun 2025
 - **Lieutenant Governor's Medal** (Youth/Bronze Category) · Province of Québec · Jan 2025 
 
