@@ -16,8 +16,8 @@ ENG (fluent) · FR (fluent) · 日本語 (beginner)
 - Designed in **KiCad**. The robot runs on an **ESP32-S3** using **ESP-IDF** directly (**no Arduino** abstraction) with task scheduling handled by **FreeRTOS** for strict timing guarantees.
 - Opponets are detected using an IR array driven by a 2-to-4 multiplexed GPIO controller, sampled at fixed intervals via the **GPTimer** peripheral with an ISR updating shared state. 
 
-#### **ChessRobot : ROS2 Motion Controller** `active`
-- Building the middleware layer between a chess-playing ML model and physical hardware for an autonomous chess robot. The system uses `ROS2` with `URDF`, `RViz`, and `Gazebo` for simulation of a `LeRobot` arm, with `MoveIt` handling motion planning.
+#### **ChessRobot : ROS2 Motion Controller (IEEE Concordia) ** `active`
+I'm building the middleware layer between a chess-playing ML model and physical hardware for an autonomous chess robot. The system uses `ROS2` with `URDF`, `RViz`, and `Gazebo` for simulation of a `LeRobot` arm, with `MoveIt` handling motion planning.
 
 #### **Nauti Metrics : QGIS Bathymetric Data Pipeline** `2025`
 Built a geospatial data pipeline for Nauti Metrics, a marine survey startup. Raw NMEA sonar logs from an EdgeTech EU D052 echosounder are parsed and cleaned in Python.
